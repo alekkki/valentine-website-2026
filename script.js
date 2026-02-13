@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
+    document.getElementById('valentineTitle').textContent = `${config.valentineName}...`;
     
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
@@ -102,6 +102,15 @@ function createFloatingElements() {
         const div = document.createElement('div');
         div.className = 'bear';
         div.innerHTML = bear;
+        setRandomPosition(div);
+        container.appendChild(div);
+    });
+
+    // Create flowers
+    config.floatingEmojis.flowers.forEach(flower => {
+        const div = document.createElement('div');
+        div.className = 'flower';
+        div.innerHTML = flower;
         setRandomPosition(div);
         container.appendChild(div);
     });
@@ -181,7 +190,7 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').textContent = config.celebration.message;
+    document.getElementById('celebrationMessage').innerHTML = `<a href="https://checkout.xtraclubs.au/gift/R5OD2WWW/redeem" target="_blank">${config.celebration.message}</a>`;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Create heart explosion effect
