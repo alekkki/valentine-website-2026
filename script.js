@@ -190,7 +190,7 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').innerHTML = `<a href="https://checkout.xtraclubs.au/gift/R5OD2WWW/redeem" target="_blank">${config.celebration.message}</a>`;
+    document.getElementById('celebrationMessage').innerHTML = `<a href="https://randomlink.com" target="_blank">${config.celebration.message}</a>`;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Create heart explosion effect
