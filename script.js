@@ -79,9 +79,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Create initial floating elements
     createFloatingElements();
-
-    // Setup music player
-    setupMusicPlayer();
 });
 
 // Create floating hearts and bears
@@ -190,7 +187,7 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').innerHTML = `<a href="https://randomlink.com" target="_blank">${config.celebration.message}</a>`;
+    document.getElementById('celebrationMessage').innerHTML = `<a href="https://checkout.xtraclubs.au/gift/R5OD2WI3/redeem" target="_blank">${config.celebration.message}</a>`;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Create heart explosion effect
